@@ -1,4 +1,4 @@
-# Start_build
+# Light
 
 My monster for speed in web-development.
 
@@ -6,7 +6,7 @@ My monster for speed in web-development.
 
 On your PC must be installed: Node.js, npm, bower.
 <ul>
-<li>git clone https://github.com/verino/start_build.git</li>
+<li>git clone https://github.com/verino/Light.git</li>
 <li>In the folder "src" create the folder "libs": mkdir libs.</li>
 <li>In root of template, use commands:</li>
 <li>bower i</li>
@@ -19,7 +19,7 @@ On your PC must be installed: Node.js, npm, bower.
 
 Steps:
 <ul>
-<li>git clone https://github.com/verino/start_build.git</li>
+<li>git clone https://github.com/verino/Light.git</li>
 
 <li>Rename the folder start_build, give it a new name for the current project.</li>
 
