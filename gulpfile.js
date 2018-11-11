@@ -147,17 +147,17 @@ gulp.task('sprite', function() {
 gulp.task('watch', function() {
 
 	// Watch any files in dist/, reload on change
-	gulp.watch('src/components/**/*.scss', ['css','css-libs','style'])
-	gulp.watch('src/css/*', ['css','style'])
-	gulp.watch('src/css/libs.scss', ['css-libs','style'])
-	gulp.watch('src/font/*', ['font'])
-	gulp.watch('src/js/custom.js', ['js','script'])
-	gulp.watch('src/js/libs.js', ['js-libs','script'])
-	gulp.watch('src/*.html', ['html'])
-	gulp.watch('src/mail.php', ['mail'])
-	gulp.watch('src/.htaccess', ['htaccess'])
-	gulp.watch('src/template/*.html', ['html'])
-	gulp.watch('src/components/**/*.html', ['html'])
+	gulp.watch('src/components/**/*.scss',{usePolling: true},['css','css-libs','style'])
+	gulp.watch('src/css/*',{usePolling: true},['css','style'])
+	gulp.watch('src/css/libs.scss',{usePolling: true},['css-libs','style'])
+	gulp.watch('src/font/*',{usePolling: true},['font'])
+	gulp.watch('src/js/custom.js',{usePolling: true},['js','script'])
+	gulp.watch('src/js/libs.js',{usePolling: true}, ['js-libs','script'])
+	gulp.watch('src/*.html',{usePolling: true},['html'])
+	gulp.watch('src/mail.php',{usePolling: true},['mail'])
+	gulp.watch('src/.htaccess',{usePolling: true},['htaccess'])
+	gulp.watch('src/template/*.html',{usePolling: true},['html'])
+	gulp.watch('src/components/**/*.html',{usePolling: true},['html'])
 });
 
 gulp.task('clean', function() {

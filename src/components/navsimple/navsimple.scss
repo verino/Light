@@ -1,14 +1,13 @@
 /* NAV-SIMPLE*/
-.main{
-  @include push(2);
-  @include span(6);
-  padding-top: 5px;
+.nav-main{
+  background-color: #31415b;
+}
+.nav{
   ul{
-    margin: 0;
-    padding: 0;
+    @include list-clear;
+    display: flex;
     li{
-      padding: 0 20px;
-      margin-bottom: 15px;
+      padding: 0 5px;
     }
     li:first-child{
       padding-left: 0;
@@ -17,6 +16,9 @@
       padding-right: 0;
     }
     a{
+      color:#fff;
+      font-family: "Cuprum";
+      font-size: 17px;
       @include navlink;
     }
   }
